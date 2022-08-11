@@ -1,366 +1,375 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Hind:wght@300;400&display=swap');
-
-
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing:border-box ;
-   
-}
-body{
-    background-color: rgb(250, 238, 238);
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Hind:wght@300;400&display=swap");
+main .h1 {
+  font-size: 60px;
 }
 
-.font-destacados{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Hind:wght@300;400&display=swap');
-
-.precios{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align:justify
+body {
+  background-color: rgb(250, 238, 238);
 }
 
-.productos_nombres{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    
-
-}
-.home-principal{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 60px;
-    color: rgb(112, 82, 108);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 50px;
-    text-align: center;
-
-    animation-name: backInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-}
-.icono_menu{
-    border-radius: 15px;
-    
-}
-.style-menu{
-    font-family:'Gentium Book Plus', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    float: left;
-    display: block;
-    cursor: pointer;
-}
-.carousel-item{
-    max-height: 40rem;
-}
-.font_inicio{
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.contenedor > *{
-    padding: 20px;
-    margin: 20px;
-}
-.tortas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.tortas{
-    width: 400px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.torta1{
-    grid-area: torta1;
+body {
+  background-color: rgb(250, 238, 238);
 }
 
-.torta2{
-    grid-area: torta2;
+.font-destacados {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.torta3{
-    grid-area: torta3;
+
+.precios {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: justify;
 }
 
-
-.torta_imagen{
-    width: 50%;
-    margin: 60px;
-    padding: 1px;
+.productos_nombres {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
-.grid-container{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
 
-    width: 90%;
-    margin: 40px auto;
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1fr);
-    grid-template-areas:
-    "torta1 torta2 torta3" ;
-    gap: 30px;
-    
+.home-principal {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 60px;
+  color: rgb(112, 82, 108);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 50px;
+  text-align: center;
+  animation-name: backInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
 }
-.grid-productos{
-    font-size: 20px;
-    text-transform: uppercase;
 
-    width: 90%;
-    margin: 40px auto;
-    
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    justify-items: center;
-    align-items: center;
-    grid-template-areas: 
-    "uno dos tres"
-    "cuatro cinco seis";
-    gap: 10px;
-
-    animation-name: primera;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    
+.icono_menu {
+  border-radius: 15px;
 }
+
+.style-menu {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  cursor: pointer;
+}
+
+.carousel-item {
+  max-height: 40rem;
+}
+
+.font_inicio {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.contenedor > * {
+  padding: 20px;
+  margin: 20px;
+}
+
+.tortas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tortas {
+  width: 400px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.torta1 {
+  grid-area: torta1;
+}
+
+.torta2 {
+  grid-area: torta2;
+}
+
+.torta3 {
+  grid-area: torta3;
+}
+
+.torta_imagen {
+  width: 50%;
+  margin: 60px;
+  padding: 1px;
+}
+
+.grid-container {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr);
+  grid-template-areas: "torta1 torta2 torta3";
+  gap: 30px;
+}
+
+.grid-productos {
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis";
+  gap: 10px;
+  animation-name: primera;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
 @keyframes primera {
-    0%{
-        transform: scale(0.5);
-    }
-    50%{ 
-        transform: scale(1);
-    }
-    
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
 }
-.item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.uno{
-    grid-area: uno;
+
+.uno {
+  grid-area: uno;
 }
-.dos{
-    grid-area: dos;
+
+.dos {
+  grid-area: dos;
 }
-.tres{
-    grid-area: tres;
+
+.tres {
+  grid-area: tres;
 }
-.cuatro{
-    grid-area: cuatro;
+
+.cuatro {
+  grid-area: cuatro;
 }
-.cinco{
-    grid-area: cinco;
+
+.cinco {
+  grid-area: cinco;
 }
-.seis{
-    grid-area: seis;
+
+.seis {
+  grid-area: seis;
 }
-.boton{
-    background-color: black;
-    border-radius: 25px;
-    text-decoration: none;
-    color: white;
-    margin-top: 1rem;
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
-    transition: heigth 1s, width 1s;
-    font-family: 'Gentium Book Plus', sans-serif;
+
+.boton {
+  background-color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  transition: heigth 1s, width 1s;
+  font-family: "Gentium Book Plus", sans-serif;
 }
-.boton:hover{
-    height: 80px; width: 200px;
-    background-image: linear-gradient(black,gray);
+
+.boton:hover {
+  height: 80px;
+  width: 200px;
+  background-image: linear-gradient(black, gray);
 }
-.boton--alternativo{
-    font-size: 20px;
-    font-weight: bold;
+
+.boton--alternativo {
+  font-size: 20px;
+  font-weight: bold;
 }
+
 #footer {
-    width: 100%;
-    background-image: linear-gradient(gray,black);
-    color: white;
-    padding: 40px 40px;
-    margin: 0px;
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 25px;
+  width: 100%;
+  background-image: linear-gradient(gray, black);
+  color: white;
+  padding: 40px 40px;
+  margin: 0px;
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 25px;
 }
 
-i{
-    font-size: 25px;
-    margin: 10px;
+i {
+  font-size: 25px;
+  margin: 10px;
 }
-.logo_footer{
-    text-align: right;
-    float: right;
-    display: block;
+
+.logo_footer {
+  text-align: right;
+  float: right;
+  display: block;
 }
-.box_promociones{
-    width: 100%;
-    padding-left: 60px;
-    padding: right 60px; ;
-    margin: 70px;
+
+.box_promociones {
+  width: 100%;
+  padding-left: 60px;
+  padding: right 60px;
+  margin: 70px;
 }
-.promocion{
-    display: flex;
+
+.promocion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-promociones {
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 20px;
+  font-family: "Gentium Book Plus", sans-serif;
+}
+
+.flex-nosotros {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+  margin: 60px;
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  padding-bottom: 40px;
+  padding: 40px;
+  font-family: "Gentium Book Plus", sans-serif;
+}
+
+.formulario_contacto {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.formulario__contacto {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+}
+
+.imagen_nosotros {
+  width: 30rem;
+  padding: 20px;
+  margin: 30px;
+  background-color: rgb(228, 219, 219);
+  border: 1px;
+  border-radius: 1000px;
+}
+
+.nosotros_titulos {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.nosotros_texto {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.productos {
+  width: 80%;
+  height: 450px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.flex_productos {
+  height: 500px;
+  font-size: 3rem;
+  font-family: "Gentium Book Plus", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+}
+
+.flex_productos > * {
+  padding: 10px;
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-image: linear-gradient(black, gray);
+}
+
+@media (max-width: 576px) {
+  header {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
-}
-.grid-promociones{
-    margin: 20px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    font-size: 20px;
-    font-family: ''Gentium Book Plus', sans-serif;
-    
-}
-.flex-nosotros{
-    font-family:'Gentium Book Plus', sans-serif; 
-    font-size: 20px;
-
-    margin: 60px;
-    padding: 60px;
-    display: flex;
-    flex-direction: row;
+  }
+  .style-menu {
+    font-size: 13px;
     align-items: center;
-    justify-content: center;
-}
-
-.formulario{
-   padding-bottom: 40px;
-   padding:40px;
-   font-family: 'Gentium Book Plus', sans-serif;
-}
-.formulario_contacto{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
-.formulario__contacto{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 20px
-}
-
-.imagen_nosotros{
-    width: 30rem;
-    padding: 20px;
-    margin: 30px;
-    background-color:rgb(228, 219, 219);
-    border: 1px;
-    border-radius: 1000px;
-    
-}
-.nosotros_titulos{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    padding: 20px;
-}
-.nosotros_texto{
-    font-family:'Gentium Book Plus', sans-serif;
-    font-size:  20px; 
-    text-align: center;
-}
-.productos{
-    width: 80%;
-    height: 450px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.flex_productos{
-    height: 500px;
-    font-size: 3rem;
-    font-family:'Gentium Book Plus', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
     justify-items: center;
-    align-items: center;
-}
-.flex_productos > *{
-    padding: 10px;
-    margin: 10px;
-}
-
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-image: linear-gradient(black,gray
-    );
-}
-@media (max-width:576px){
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    .style-menu{
-        font-size: 13px;
-        align-items: center;
-        justify-items: center;
-    }
-    .grid-container{
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-        grid-template-areas:
-        "torta1"
-        "torta2"
-        "torta3";
-    }
-    .tortas{
-        width: auto;
-        flex-direction: column;
-    }
-    .grid-productos{
-
+  }
+  .grid-container {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "torta1" "torta2" "torta3";
+  }
+  .tortas {
+    width: auto;
+    flex-direction: column;
+  }
+  .grid-productos {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-    grid-template-areas: 
-    "uno dos"
-    "tres cuatro"
-    "cinco seis";
-    }
-    .grid-promociones{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-
-    }
-    .flex-nosotros{
-        flex-direction: column;
-    }
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+  }
+  .grid-promociones {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .flex-nosotros {
+    flex-direction: column;
+  }
 }
 
+/*# sourceMappingURL=estilos.css.map */
