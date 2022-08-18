@@ -2,9 +2,32 @@
 @import "fonts";
 
 
-$background: rgb(250, 238, 238);
-$tamaño: 60px;
 
+$tamaño: 60px;
+$estilos:(
+    principales:rgb(112, 82, 108),
+    color:  white,
+    boton: black,
+);
+
+header{
+    background-image: $color-hyf;
+}
+footer{
+    background-image: $color-hyf;
+    
+}
+.boton{
+    background-image: $color-hyf;
+
+}
+
+h1{
+    font-family: $estilo-letra;
+}
+a{
+    font-family: $estilo-letra;
+}
 main{
 .h1{
     font-size: $tamaño;
@@ -52,7 +75,7 @@ body{
 .home-principal{
     font-family: 'Gentium Book Plus', sans-serif;
     font-size: 60px;
-    color: rgb(112, 82, 108);
+    color: map-get($estilos , principales );
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 50px;
@@ -80,7 +103,7 @@ body{
 }
 .font_inicio{
     padding: 10px;
-    color: white;
+    color: map-get($estilos, color );
     text-decoration: none;
 }
 
@@ -113,12 +136,13 @@ body{
 .torta3{
     grid-area: torta3;
 }
-
+@mixin img-size($alto,$ancho) {
+    height: $alto;
+    width: $ancho;
+}
 
 .torta_imagen{
-    width: 50%;
-    margin: 60px;
-    padding: 1px;
+    @extend .productos;
 }
 .grid-container{
     font-family: 'Gentium Book Plus', sans-serif;
@@ -194,7 +218,7 @@ body{
     grid-area: seis;
 }
 .boton{
-    background-color: black;
+    background-color: map-get($estilos, boton );
     border-radius: 25px;
     text-decoration: none;
     color: white;
@@ -303,8 +327,7 @@ i{
     text-align: center;
 }
 .productos{
-    width: 80%;
-    height: 450px;
+    @include img-size(450px,80%);
     margin: 10px;
     padding: 10px;
 }
