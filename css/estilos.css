@@ -149,7 +149,8 @@ body {
   grid-template-areas: "uno dos tres" "cuatro cinco seis";
   gap: 10px;
 }
-.grid-productos.card {
+
+.grid-productos .card {
   width: 333px;
   height: 650px;
   border-radius: 2px;
@@ -157,15 +158,18 @@ body {
   margin: 20px;
   text-align: center;
 }
-.grid-productos:hover {
+
+.grid-productos .card:hover {
   transform: translateY(-15px);
   box-shadow: 2px 2px 2px 2px rgb(230, 149, 163);
 }
+
 .grid-productos a {
   padding: 0 1rem;
   font-size: 16px;
   font-weight: 300;
 }
+
 .grid-productos p {
   font-size: 20px;
 }
