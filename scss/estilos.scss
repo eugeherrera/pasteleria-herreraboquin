@@ -5,24 +5,25 @@
 
 $tamaño: 60px;
 $estilos:(
-    principales:rgb(112, 82, 108),
+    principales:rgb(230, 149, 163),
     color:  white,
-    boton: black,
+    boton: rgb(230, 149, 163),
 );
 
 header{
-    background-image: $color-hyf;
+    background-color: $color-hyf;
 }
 footer{
-    background-image: $color-hyf;
-    
+    background-color: $color-hyf;
 }
 .boton{
-    background-image: $color-hyf;
-
+    background-color: $color-hyf;
 }
 
 h1{
+    font-family: $estilo-letra;
+}
+h4{
     font-family: $estilo-letra;
 }
 a{
@@ -34,18 +35,16 @@ main{
 }
 }
 body{
-    background-color:
-    $background ;
+    background-color: $background;
 }
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing:border-box ;
    
 }
-body{
-    background-color: rgb(250, 238, 238);
-}
+
 
 .font-destacados{
     font-family: 'Gentium Book Plus', sans-serif;
@@ -55,13 +54,7 @@ body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Hind:wght@300;400&display=swap');
 
-.precios{
-    font-family: 'Gentium Book Plus', sans-serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align:justify
-}
+
 
 .productos_nombres{
     font-family: 'Gentium Book Plus', sans-serif;
@@ -144,6 +137,8 @@ body{
 .torta_imagen{
     @extend .productos;
 }
+
+
 .grid-container{
     font-family: 'Gentium Book Plus', sans-serif;
     font-size: 20px;
@@ -178,12 +173,28 @@ body{
     "cuatro cinco seis";
     gap: 10px;
 
-    animation-name: primera;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    
 }
+.grid-productos .card{
+    width: 333px;
+    height: 650px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgb(230, 149, 163);
+    margin: 20px;
+    text-align: center;
+}
+.grid-productos .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 2px 2px rgb(230, 149, 163);
+}
+.grid-productos .card a{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.grid-productos .card p{
+    font-size: 20px;
+}
+
 @keyframes primera {
     0%{
         transform: scale(0.5);
@@ -230,8 +241,8 @@ body{
     font-family: 'Gentium Book Plus', sans-serif;
 }
 .boton:hover{
-    height: 80px; width: 200px;
-    background-image: linear-gradient(black,gray);
+    height: 50px; width: 120px;
+    background-image: $color-hyf;
 }
 .boton--alternativo{
     font-size: 20px;
@@ -239,7 +250,7 @@ body{
 }
 #footer {
     width: 100%;
-    background-image: linear-gradient(gray,black);
+    background-image: $color-hyf;
     color: white;
     padding: 40px 40px;
     margin: 0px;
@@ -353,8 +364,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-image: linear-gradient(black,gray
-    );
+    background-image: $color-hyf;
 }
 @media (max-width:576px){
     header {

@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Hind:wght@300;400&display=swap");
 header {
-  background-image: linear-gradient(black, gray);
+  background-color: rgb(230, 149, 163);
 }
 
 footer {
-  background-image: linear-gradient(black, gray);
+  background-color: rgb(230, 149, 163);
 }
 
 .boton {
-  background-image: linear-gradient(black, gray);
+  background-color: rgb(230, 149, 163);
 }
 
 h1 {
+  font-family: "Gentium Book Plus";
+}
+
+h4 {
   font-family: "Gentium Book Plus";
 }
 
@@ -24,7 +28,7 @@ main .h1 {
 }
 
 body {
-  background-color: rgb(250, 238, 238);
+  background-color: rgb(243, 206, 206);
 }
 
 * {
@@ -33,23 +37,11 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(250, 238, 238);
-}
-
 .font-destacados {
   font-family: "Gentium Book Plus", sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-.precios {
-  font-family: "Gentium Book Plus", sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: justify;
 }
 
 .productos_nombres {
@@ -63,7 +55,7 @@ body {
 .home-principal {
   font-family: "Gentium Book Plus", sans-serif;
   font-size: 60px;
-  color: rgb(112, 82, 108);
+  color: rgb(230, 149, 163);
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 50px;
@@ -156,10 +148,30 @@ body {
   align-items: center;
   grid-template-areas: "uno dos tres" "cuatro cinco seis";
   gap: 10px;
-  animation-name: primera;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
+}
+
+.grid-productos .card {
+  width: 333px;
+  height: 650px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 2px rgb(230, 149, 163);
+  margin: 20px;
+  text-align: center;
+}
+
+.grid-productos .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 2px 2px 2px 2px rgb(230, 149, 163);
+}
+
+.grid-productos .card a {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.grid-productos .card p {
+  font-size: 20px;
 }
 
 @keyframes primera {
@@ -202,7 +214,7 @@ body {
 }
 
 .boton {
-  background-color: black;
+  background-color: rgb(230, 149, 163);
   border-radius: 25px;
   text-decoration: none;
   color: white;
@@ -215,9 +227,9 @@ body {
 }
 
 .boton:hover {
-  height: 80px;
-  width: 200px;
-  background-image: linear-gradient(black, gray);
+  height: 50px;
+  width: 120px;
+  background-image: rgb(230, 149, 163);
 }
 
 .boton--alternativo {
@@ -227,7 +239,7 @@ body {
 
 #footer {
   width: 100%;
-  background-image: linear-gradient(gray, black);
+  background-image: rgb(230, 149, 163);
   color: white;
   padding: 40px 40px;
   margin: 0px;
@@ -347,7 +359,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background-image: linear-gradient(black, gray);
+  background-image: rgb(230, 149, 163);
 }
 
 @media (max-width: 576px) {
