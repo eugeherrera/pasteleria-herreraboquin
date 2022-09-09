@@ -181,7 +181,6 @@ body{
         margin: 20px;
         text-align: center;
     }
-
     .grid-productos .card:hover{
         transform: translateY(-15px);
         box-shadow: 2px 2px 2px 2px rgb(230, 149, 163);
@@ -269,10 +268,10 @@ i{
 }
 .box_promociones{
     width: 100%;
-    padding-left: 60px;
-    padding: right 60px; ;
-    margin: 70px;
+    padding: 20px;
+    margin: 0px;
 }
+
 .promocion{
     display: flex;
     flex-direction: column;
@@ -319,10 +318,10 @@ i{
 
 .imagen_nosotros{
     width: 30rem;
-    padding: 20px;
-    margin: 30px;
-    background-color:rgb(228, 219, 219);
-    border: 1px;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+    border: 0px;
     border-radius: 1000px;
     
 }
@@ -364,65 +363,69 @@ header{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-image: $color-hyf;
+    background-color: $color-hyf;
+}
+/** Media queris**/
+
+@media (max-width:768px){
+    .grid-container{
+        grid-template-areas:
+        "torta1"
+        "torta2"
+        "torta3";
+    }
+    .grid-productos{
+        width: 100%;
+        grid-template-areas:
+        "uno dos"
+        "tres cuatro"
+        "cinco seis";
+        
+    }
+    .flex-nosotros{
+        flex-direction: column;
+}
 }
 @media (max-width:576px){
-    header {
-        width: 100%;
+    /** estilos generales**/
+    header{
         flex-direction: column;
         align-items: center;
     }
     .style-menu{
-        font-size: 13px;
-        align-items: center;
-        justify-items: center;
+        .style-menu{
+            font-size: 13px;
+        }
     }
+    .home-principal{
+        font-size: 50px ;
+    }
+    /** index**/
     .grid-container{
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
         grid-template-areas:
         "torta1"
         "torta2"
         "torta3";
     }
-    .tortas{
-        width: auto;
-        flex-direction: column;
-    }
+    /** productos**/
     .grid-productos{
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows:repeat(2,1fr);
-    grid-template-areas:
-    "uno dos"
-    "tres cuatro"
-    "cinco seis";
+        grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis";
+        
     }
+    /** promociones**/
     .grid-promociones{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
+        padding: 0px;
     }
+    /** nosotros**/
     .flex-nosotros{
         flex-direction: column;
-    }
 }
-@media (max-width:768px){
-    header {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .grid-container{
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-        grid-template-areas:
-        "torta1"
-        "torta2"
-        "torta3";
-    }
-    .grid-promociones{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-    }
 }
