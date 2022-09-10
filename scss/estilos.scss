@@ -452,4 +452,25 @@ header{
         flex-direction: column;
 }
 }
-
+@media (max-width:320px){
+    .home-principal{
+        font-size: 25px;
+    }
+    .carousel-item{
+        width: 300px;
+        height: 300px;
+    }
+    .grid-container{
+        grid-template-columns:1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas:
+        "torta1"
+        "torta2"
+        "torta3";
+    }
+    .tortas{
+        flex-direction: column;
+        width: 300px;
+        height: 400px;
+    }
+}
