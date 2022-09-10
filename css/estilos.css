@@ -66,6 +66,12 @@ body {
   animation-delay: 0s;
 }
 
+.logo-menu {
+  width: 120px;
+  height: 80px;
+  border-radius: 15px;
+}
+
 .icono_menu {
   border-radius: 15px;
 }
@@ -284,11 +290,13 @@ i {
   font-family: "Gentium Book Plus", sans-serif;
   font-size: 20px;
   margin: 60px;
-  padding: 60px;
+  padding: 40px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
+  text-transform: uppercase;
+  gap: 100px;
 }
 
 .formulario {
@@ -297,15 +305,17 @@ i {
   font-family: "Gentium Book Plus", sans-serif;
 }
 
-.formulario_contacto {
-  font-family: "Gentium Book Plus", sans-serif;
-  font-size: 30px;
-  text-align: center;
-}
-
 .formulario__contacto {
   font-family: "Gentium Book Plus", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.formulario_contacto {
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 .imagen_nosotros {
@@ -348,9 +358,15 @@ i {
   align-items: center;
 }
 
-.flex_productos > * {
+.flex_productos * {
   padding: 10px;
   margin: 10px;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+  font-family: "Gentium Book Plus", sans-serif;
+  font-size: 25px;
 }
 
 header {
@@ -364,10 +380,14 @@ header {
 /** Media queris**/
 @media (max-width: 768px) {
   .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "torta1" "torta2" "torta3";
   }
   .grid-productos {
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
   }
   .flex-nosotros {
@@ -388,10 +408,14 @@ header {
   }
   /** index**/
   .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1fr);
     grid-template-areas: "torta1" "torta2" "torta3";
   }
   /** productos**/
   .grid-productos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
   }
   /** promociones**/
