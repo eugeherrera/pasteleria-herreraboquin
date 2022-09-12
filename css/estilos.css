@@ -228,7 +228,7 @@ body {
   cursor: pointer;
   width: 100px;
   height: 40px;
-  transition: heigth 1s, width 1s;
+  transition: width 1s;
   font-family: "Gentium Book Plus", sans-serif;
 }
 
@@ -341,10 +341,10 @@ i {
 }
 
 .productos, .torta_imagen {
-  height: 450px;
-  width: 80%;
+  width: 300px;
   margin: 10px;
   padding: 10px;
+  border-radius: 20px;
 }
 
 .flex_productos {
@@ -442,10 +442,37 @@ header {
     grid-template-rows: 3fr;
     grid-template-areas: "torta1" "torta2" "torta3";
   }
+  .grid-productos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis";
+  }
+  .grid-productos .card {
+    margin: 10px;
+    width: 300px;
+  }
   .tortas {
     flex-direction: column;
     width: 300px;
     height: 400px;
+  }
+  .flex-nosotros {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  .imagen_nosotros {
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
 }
 
